@@ -1,2 +1,2 @@
-# Golden-Discogrphy
+# Golden-Discography
 Feb-2021
