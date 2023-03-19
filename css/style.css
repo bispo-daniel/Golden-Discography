@@ -2,22 +2,20 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 
-    width: 100%;
-    height: 100vh;
+    min-width: 100%;
+    min-height: 100vh;
 
     margin: 0;
     color: white;
     background-color: black;
-
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 100;
-    font-size: 14px;
 }
 
 header {
     width: 100%;
     min-height: 80px;
+    max-width: 2500px;
 
     display: flex;
     flex-direction: row;
@@ -46,13 +44,16 @@ header > .socialMedia > ul {
     justify-content: space-around;
 }
 
+/* ---------------------------------------------------------- */
+
 main {
     width: 100%;
+    max-width: 1220px;
 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 
     margin-bottom: 20px;
 }
@@ -71,7 +72,14 @@ main ul {
     align-items: center;
     flex-direction: row;
     justify-content: space-around;
+
+    margin-bottom: 20px;
 }
+
+main ul li {
+    padding: 15px;
+}
+
 main ul li img {
     width: 144px;
     border-radius: 10px;
@@ -81,10 +89,8 @@ img:hover {
     filter: opacity(0.5);
     transition: 0.5s;
 }
-p:hover {
-    filter: opacity(0.5);
-    transition: 0.5s;
-}
+
+/* ---------------------------------------------------------- */
 
 footer {
     display: flex;
